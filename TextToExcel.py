@@ -30,8 +30,8 @@ def parse():
         words = line.split()
 
         # Extract desired data, only excutes if words is NOT blank
-        if words:
-            print words
+        #if words:
+            #print words
 
         for elements in words:
             if elements == "PASS" or elements == "P":
@@ -47,8 +47,6 @@ def parse():
                 col = col + 1
 
         if len(words) < 1:
-            rowflag = row
-            dataflag = row - 1
             continue
         row = row + 1
 
